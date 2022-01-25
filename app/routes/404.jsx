@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { ListDetailView } from '~/components/Layouts'
-import { Detail } from '~/components/ListDetail/Detail'
+import { ListDetailView } from '../components/Layouts';
+import { Detail } from "../components/ListDetail";
 
 function MissingPage() {
     return <Detail.Null />

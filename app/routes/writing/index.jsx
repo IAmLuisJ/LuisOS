@@ -5,9 +5,7 @@ import SiteLayout from '../../components/Layouts/SiteLayout';
 
 const Writing = () => {
     return (<div>
-        <SiteLayout>
-            <ListDetailView list={ } hasDetail={false} detail={<Intro />} />
-        </SiteLayout>
+        <h1>Posts will go here</h1>
     </div>)
 }
 

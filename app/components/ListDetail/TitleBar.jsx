@@ -29,22 +29,22 @@ export function TitleBar({
     })
 
     const initialTitleOffsetsRef = React.useRef(initialTitleOffsets)
-    const setInitialTitleOffsets = (data) => {
-        initialTitleOffsetsRef.current = data
-        _setInitialTitleOffsets(data)
-    }
+    // const setInitialTitleOffsets = (data) => {
+    //     initialTitleOffsetsRef.current = data
+    //     _setInitialTitleOffsets(data)
+    // }
 
     const opacityRef = React.useRef(opacity)
-    const setOpacity = (data) => {
-        opacityRef.current = data
-        _setOpacity(data)
-    }
+    // const setOpacity = (data) => {
+    //     opacityRef.current = data
+    //     _setOpacity(data)
+    // }
 
     const currentScrollOffsetRef = React.useRef(currentScrollOffset)
-    const setCurrentScrollOffset = (data) => {
-        currentScrollOffsetRef.current = data
-        _setCurrentScrollOffset(data)
-    }
+    // const setCurrentScrollOffset = (data) => {
+    //     currentScrollOffsetRef.current = data
+    //     _setCurrentScrollOffset(data)
+    // }
 
     const handler = React.useCallback(() => {
         const shadowOpacity = scrollContainerRef.current.scrollTop / 200
@@ -120,7 +120,7 @@ export function TitleBar({
                         )}
 
                         {backButton && (
-                            <Link href={backButtonHref}>
+                            <Link to={backButtonHref}>
                                 <a className="text-primary flex items-center justify-center rounded-md p-2 hover:bg-gray-200 dark:hover:bg-gray-800 lg:hidden">
                                     <ArrowLeft size={16} className="text-primary" />
                                 </a>

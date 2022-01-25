@@ -14,7 +14,7 @@ import {
     StaffDesignIcon,
     TwitterIcon,
     WritingIcon,
-} from '~/components/Icon'
+} from "../Icon"
 
 export function SidebarNavigation() {
     const router = useRouter()

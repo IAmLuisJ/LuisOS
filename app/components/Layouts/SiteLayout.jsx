@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Sidebar } from '../Sidebar'
 function SiteLayout({ children }) {
     return (
         <div className="relative flex h-full min-h-screen w-full">
@@ -8,3 +8,5 @@ function SiteLayout({ children }) {
         </div>
     )
 }
+
+export default SiteLayout;

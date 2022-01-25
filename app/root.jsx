@@ -9,7 +9,7 @@ import {
 import styles from "./styles/app.css"
 
 export function meta() {
-  return { title: "New Remix App" };
+  return { title: "LuisOS" };
 }
 
 export function links() {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'remix';
 import {
     AMAIcon,
     AppDissectionIcon,
@@ -17,14 +18,14 @@ import {
 } from "../Icon"
 
 export function SidebarNavigation() {
-    const router = useRouter()
+    const router = useLocation()
     const links = [
         {
             href: '/',
             label: 'Home',
             icon: HomeIcon,
             trailingAccessory: null,
-            isActive: router.asPath === '/',
+            isActive: router.pathname === '/',
             trailingAction: null,
             isExternal: false,
         },
@@ -34,7 +35,7 @@ export function SidebarNavigation() {
             label: 'Writing',
             icon: WritingIcon,
             trailingAccessory: null,
-            isActive: router.asPath.indexOf('/writing') >= 0,
+            isActive: router.pathname.indexOf('/writing') >= 0,
             trailingAction: null,
             isExternal: false,
         },
@@ -46,7 +47,7 @@ export function SidebarNavigation() {
             label: 'Bookmarks',
             icon: BookmarksIcon,
             trailingAccessory: null,
-            isActive: router.asPath.indexOf('/bookmarks') >= 0,
+            isActive: router.pathname.indexOf('/bookmarks') >= 0,
             trailingAction: data?.viewer?.isAdmin ? ThisAddBookmarkDialog : null,
             isExternal: false,
         },
@@ -57,8 +58,8 @@ export function SidebarNavigation() {
             icon: AMAIcon,
             trailingAccessory: null,
             isActive:
-                router.asPath.indexOf('/ama') >= 0 &&
-                !router.asPath.startsWith('/ama/pending'),
+                router.pathname.indexOf('/ama') >= 0 &&
+                !router.pathname.startsWith('/ama/pending'),
             trailingAction: null,
             isExternal: false,
         },
@@ -68,7 +69,7 @@ export function SidebarNavigation() {
             label: 'Stack',
             icon: StackIcon,
             trailingAccessory: null,
-            isActive: router.asPath.indexOf('/stack') >= 0,
+            isActive: router.pathname.indexOf('/stack') >= 0,
             trailingAction: null,
             isExternal: false,
         },
@@ -110,7 +111,7 @@ export function SidebarNavigation() {
             label: 'Security Checklist',
             icon: SecurityChecklistIcon,
             trailingAccessory: null,
-            isActive: router.asPath.indexOf('/security') >= 0,
+            isActive: router.pathname.indexOf('/security') >= 0,
             trailingAction: null,
             isExternal: false,
         },
@@ -120,7 +121,7 @@ export function SidebarNavigation() {
             label: 'Hacker News',
             icon: HackerNewsIcon,
             trailingAccessory: null,
-            isActive: router.asPath.indexOf('/hn') >= 0,
+            isActive: router.pathname.indexOf('/hn') >= 0,
             trailingAction: null,
             isExternal: false,
         },
@@ -130,7 +131,7 @@ export function SidebarNavigation() {
             label: 'App Dissection',
             icon: AppDissectionIcon,
             trailingAccessory: null,
-            isActive: router.asPath.indexOf('/app-dissection') >= 0,
+            isActive: router.pathname.indexOf('/app-dissection') >= 0,
             trailingAction: null,
             isExternal: false,
         },

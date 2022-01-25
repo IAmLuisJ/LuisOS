@@ -1,9 +1,9 @@
 {
-  "version": "0f8a8ec6",
+  "version": "8a1d61ae",
   "entry": {
-    "module": "/build/entry.client-YC2SBRZX.js",
+    "module": "/build/entry.client-UYJPZ5KV.js",
     "imports": [
-      "/build/_shared/chunk-FBJ7M2KA.js",
+      "/build/_shared/chunk-3YIKC5TU.js",
       "/build/_shared/chunk-AKSB5QXU.js"
     ]
   },
@@ -11,7 +11,34 @@
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-PHBF4PJE.js",
+      "module": "/build/root-DYJYW3RI.js",
+      "imports": [
+        "/build/_shared/chunk-6P27NKKA.js",
+        "/build/_shared/chunk-3VWRUPIT.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/404": {
+      "id": "routes/404",
+      "parentId": "root",
+      "path": "404",
+      "module": "/build/routes/404-VHMDN4AW.js",
+      "imports": [
+        "/build/_shared/chunk-RE424CQI.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/about": {
+      "id": "routes/about",
+      "parentId": "root",
+      "path": "about",
+      "module": "/build/routes/about-HPBJSZPW.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -21,12 +48,31 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-ITZJZTKQ.js",
+      "module": "/build/routes/index-5VJUFRG6.js",
+      "imports": [
+        "/build/_shared/chunk-DOU7KVFB.js",
+        "/build/_shared/chunk-RE424CQI.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/writing/index": {
+      "id": "routes/writing/index",
+      "parentId": "root",
+      "path": "writing",
+      "index": true,
+      "module": "/build/routes/writing/index-JX4CIXBA.js",
+      "imports": [
+        "/build/_shared/chunk-DOU7KVFB.js",
+        "/build/_shared/chunk-RE424CQI.js"
+      ],
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-0F8A8EC6.js"
+  "url": "/build/manifest-8A1D61AE.js"
 }

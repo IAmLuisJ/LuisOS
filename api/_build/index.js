@@ -422,7 +422,10 @@ init_react();
 var import_remix4 = __toModule(require_remix());
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-ZJQQKRYN.css";
+var app_default = "/build/_assets/app-6EJTFLMP.css";
+
+// app/styles/dracula.css
+var dracula_default = "/build/_assets/dracula-22APYHD4.css";
 
 // app/components/Layouts/SiteLayout.jsx
 init_react();
@@ -888,7 +891,7 @@ function SidebarNavigation() {
       isExternal: true
     },
     {
-      href: "https://github.com/brianlovin",
+      href: "https://github.com/iAmLuisJ",
       label: "GitHub",
       icon: GitHubIcon,
       trailingAccessory: ExternalLinkIcon,
@@ -953,7 +956,10 @@ function meta() {
   return { title: "LuisOS" };
 }
 function links() {
-  return [{ rel: "stylesheet", href: app_default }];
+  return [
+    { rel: "stylesheet", href: app_default },
+    { rel: "stylesheet", href: dracula_default, media: "(prefers-color-scheme: dark)" }
+  ];
 }
 function App() {
   return /* @__PURE__ */ React.createElement("html", {
@@ -963,15 +969,7 @@ function App() {
   }), /* @__PURE__ */ React.createElement("meta", {
     name: "viewport",
     content: "width=device-width,initial-scale=1"
-  }), /* @__PURE__ */ React.createElement(import_remix4.Meta, null), /* @__PURE__ */ React.createElement(import_remix4.Links, null)), /* @__PURE__ */ React.createElement("body", null, /* @__PURE__ */ React.createElement("span", {
-    className: "text-tertiary absolute flex -translate-y-full transform space-x-1 border-b border-gray-150 bg-white p-2 focus-within:relative focus-within:translate-y-0 dark:border-gray-800 dark:bg-gray-900"
-  }, /* @__PURE__ */ React.createElement("a", {
-    className: "text-primary font-semibold",
-    href: "#main"
-  }, "Skip to content"), /* @__PURE__ */ React.createElement("span", null, "(if available)"), /* @__PURE__ */ React.createElement("span", null, "or"), /* @__PURE__ */ React.createElement("a", {
-    className: "text-primary font-semibold",
-    href: "#list"
-  }, "jump to list"), /* @__PURE__ */ React.createElement("span", null, "(if available)")), /* @__PURE__ */ React.createElement(SiteLayout_default, null, /* @__PURE__ */ React.createElement(import_remix4.Outlet, null)), /* @__PURE__ */ React.createElement(import_remix4.ScrollRestoration, null), /* @__PURE__ */ React.createElement(import_remix4.Scripts, null), false));
+  }), /* @__PURE__ */ React.createElement(import_remix4.Meta, null), /* @__PURE__ */ React.createElement(import_remix4.Links, null)), /* @__PURE__ */ React.createElement("body", null, /* @__PURE__ */ React.createElement(SiteLayout_default, null, /* @__PURE__ */ React.createElement(import_remix4.Outlet, null)), /* @__PURE__ */ React.createElement(import_remix4.ScrollRestoration, null), /* @__PURE__ */ React.createElement(import_remix4.Scripts, null), false));
 }
 
 // route-module:/Users/luisjuarez/GitHub/LuisOS/app/routes/writing/index.jsx

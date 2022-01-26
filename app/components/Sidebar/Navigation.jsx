@@ -148,7 +148,7 @@ export function SidebarNavigation() {
         },
 
         {
-            href: 'https://github.com/brianlovin',
+            href: 'https://github.com/iAmLuisJ',
             label: 'GitHub',
             icon: GitHubIcon,
             trailingAccessory: ExternalLinkIcon,

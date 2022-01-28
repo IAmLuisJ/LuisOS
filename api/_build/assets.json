@@ -1,5 +1,5 @@
 {
-  "version": "e458d985",
+  "version": "7f1112b7",
   "entry": {
     "module": "/build/entry.client-UYJPZ5KV.js",
     "imports": [
@@ -11,9 +11,9 @@
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-VI2IRX6Z.js",
+      "module": "/build/root-WB6D725Y.js",
       "imports": [
-        "/build/_shared/chunk-7G6XMLXB.js",
+        "/build/_shared/chunk-GRIY4I53.js",
         "/build/_shared/chunk-3VWRUPIT.js"
       ],
       "hasAction": false,
@@ -63,7 +63,7 @@
       "parentId": "root",
       "path": "writing",
       "index": true,
-      "module": "/build/routes/writing/index-Q3W4HGZ6.js",
+      "module": "/build/routes/writing/index-IA6RQN52.js",
       "imports": [
         "/build/_shared/chunk-DOU7KVFB.js",
         "/build/_shared/chunk-RE424CQI.js"
@@ -74,5 +74,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-E458D985.js"
+  "url": "/build/manifest-7F1112B7.js"
 }

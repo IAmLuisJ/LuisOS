@@ -20,6 +20,7 @@ export function NavigationLink({ link: {
         >
             <Link to={href}>
                 <a
+                    href={href}
                     target={isExternal ? '_blank' : undefined}
                     rel={isExternal ? 'noopener noreferrer' : undefined}
                     className={`flex flex-1 items-center space-x-3 rounded-md px-2 py-1.5 text-sm font-medium  ${isActive

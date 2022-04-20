@@ -54,7 +54,7 @@ export function SidebarNavigation() {
         },
 
         {
-            href: '/ama',
+            href: '/new',
             label: 'AMA',
             icon: AMAIcon,
             trailingAccessory: null,
